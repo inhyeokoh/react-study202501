@@ -7,7 +7,6 @@ const Counter = () => {
   // 2- 상태변경 함수
   const [count, setCount] = useState(0);
   console.log('1. init count: ', count);
-  
 
   const increaseHandler = () => { 
     // 상태값을 업데이트할 때는 상태값에 직접 접근하면 안되고
