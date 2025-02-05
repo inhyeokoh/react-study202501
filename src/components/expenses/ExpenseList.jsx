@@ -23,13 +23,27 @@ const ExpenseList = ({ expenses }) => {
   //   return expenses.map(ex => <ExpenseItem expense={ex} />);
   // };
 
+  // 지출 데이터가 없을 때 보여줄 컴포넌트
+  let content = <p>아직 해당년도의 지출항목이 없습니다.</p>;
+
+  // 지출 데이터가 있을 때 보여줄 컴포넌트
+  const filteredExpenses = expenses
+    .filter((ex) => ex.date.getFullYear().toString() === year);
+  
+  if (filteredExpenses.length > 0) {
+    content = filteredExpenses.map((ex) => (
+      <ExpenseItem
+        key={Math.random()}
+        expense={ex}
+      />
+    ));
+  }
+
   
   return (
     <div className='expenses'>
       <ExpenseFilter onChangeFilter={onFilterChange} />
-      {expenses
-        .filter(ex => ex.date.getFullYear().toString() === year)
-        .map((ex) => (<ExpenseItem key={Math.random()} expense={ex} />))}
+      { content }
     </div>
   );
 };
