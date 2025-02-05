@@ -13,6 +13,9 @@ const App = () => {
   const onAddGoal = (goal) => {
     setGoals([ ...goals, goal ]);
   };
+
+  console.log(goals);
+  
   
   return (
     <div>
