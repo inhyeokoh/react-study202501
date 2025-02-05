@@ -21,6 +21,16 @@ const App = () => {
       price: 300000,
       date: new Date(2025, 1 - 1, 15),
     },
+    {
+      title: '피자',
+      price: 4000,
+      date: new Date(2020, 8 - 1, 28),
+    },
+    {
+      title: '파리채',
+      price: 1000,
+      date: new Date(2022, 7 - 1, 12),
+    },
   ];
 
   // 상향식 데이터 전달을 위해 하위컴포넌트에게 함수 하나를 내려줘야 함.
