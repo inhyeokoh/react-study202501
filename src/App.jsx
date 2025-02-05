@@ -19,7 +19,7 @@ const App = () => {
     },
     {
       title: '헬스장등록',
-      price: 300000,
+      price: 270000,
       date: new Date(2025, 1 - 1, 15),
     },
     {
