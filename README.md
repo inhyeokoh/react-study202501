@@ -11,3 +11,7 @@
 3. `npm run dev` <- 프론트엔드 서버 실행 (서버켤 때마다 실행)
 
 - 서버 끌때는 터미널에서 Ctrl + C, Ctrl + Z
+
+# 추가 라이브러리 설치
+1. styled-components: 동적 CSS를 처리해주는 라이브러리
+- `$ npm install styled-components`
