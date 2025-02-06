@@ -15,3 +15,5 @@
 # 추가 라이브러리 설치
 1. styled-components: 동적 CSS를 처리해주는 라이브러리
 - `$ npm install styled-components`
+2. sass: SCSS를 지원하는 라이브러리
+- `$ npm install sass`
