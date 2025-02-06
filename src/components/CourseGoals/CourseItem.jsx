@@ -1,7 +1,9 @@
 import React from 'react';
-import './CourseItem.css';
+import styles from './CourseItem.module.css';
 
 const CourseItem = ({ item, onDelete }) => {
+
+  const { 'goal-item': goalItem } = styles;
 
   const { id, text } = item;
   
@@ -17,7 +19,13 @@ const CourseItem = ({ item, onDelete }) => {
     onDelete(id);
   };
 
-  return <li className='goal-item' onClick={handleDelete}>{text}</li>;
+  return (
+    <li
+      className={goalItem}
+      onClick={handleDelete}>
+      {text}
+    </li>
+  );
 };
 
 export default CourseItem;
